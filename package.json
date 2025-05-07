@@ -1,23 +1,43 @@
 {
-  "name": "for-kicks-and-giggles",
+  "name": "for-shits-and-giggles",
   "version": "1.0.0",
-  "description": "",
+  "description": "A dark-themed web app that fetches jokes from the JokeAPI. Supports dynamic filters including categories, blacklist flags, type, and search keywords. Built with Axios, Express, and EJS.",
   "main": "index.js",
   "type": "module",
   "engines": {
     "node": ">= 14.0.0",
     "npm": ">= 6.0.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://for-shits-and-giggles-c0e5adh6hmhbfhhs.canadacentral-01.azurewebsites.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junaid-mohammad/For-Shits-and-Giggles.git"
   },
+  "bugs": "",
+  "keywords": [
+    "JokeAPI",
+    "Axios",
+    "Express",
+    "EJS",
+    "RESTful API",
+    "Node.js",
+    "dark mode",
+    "dynamic forms"
+  ],
   "author": "Junaid Arif",
-  "license": "ISC",
+  "contributors": [],
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": ""
+  },
   "dependencies": {
     "axios": "^1.9.0",
     "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "license": "ISC"
 }
