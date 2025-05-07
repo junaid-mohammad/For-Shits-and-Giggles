@@ -129,7 +129,7 @@ git push azure main    # Updates Azure DevOps & deploys automatically
 
 ## 🤝 Contribution
 
-This project was built for learning and portfolio purposes, but feel free to fork the repository and submit pull requests if you'd like to propose new features or improvements!
+This project was built for learning and portfolio purposes, but feel free to fork the repository and submit pull requests if you'd like to propose new features or improvements, Thank you!
 
 ---
 
