@@ -1,0 +1,224 @@
+/* ---------------------------------
+   Reset & Base Styling
+--------------------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(to right, #121212, #1e1e1e); /* Dark gradient background */
+  color: #f1f1f1; /* Base text color */
+}
+
+body {
+  height: 100%;
+}
+
+/* ---------------------------------
+   Typography
+--------------------------------- */
+h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+  color: #f8f9fa;
+}
+
+p {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+/* ---------------------------------
+   Layout Container
+--------------------------------- */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* ---------------------------------
+   Disclaimer Styling
+--------------------------------- */
+.disclaimer {
+  font-size: 0.85rem;
+  color: #bbbbbb;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.5;
+  padding: 5px 10px;
+  border-left: 3px solid #a29bfe;  /* Accent color */
+  background-color: #1b1b1b;
+  border-radius: 4px;
+}
+
+/* ---------------------------------
+   Form Styling
+--------------------------------- */
+.form {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #333;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #dddddd;
+}
+
+/* Form Inputs and Selects */
+.form-select, .form-input {
+  width: 100%;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.form-select option {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+/* Full-width search and button */
+.form-search {
+  grid-column: 1 / -1;  /* Span both columns */
+}
+
+/* Submit Button */
+.form-submit {
+  grid-column: 1 / -1;
+  outline: none;
+  border: none;
+  background-color: #a29bfe;  /* Soft purple */
+  color: #1b1b1b;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #8c7ae6;
+  transform: scale(1.03);
+}
+
+/* ---------------------------------
+   Joke Cards
+--------------------------------- */
+.cards {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card-item {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card-item h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f8f9fa;
+  margin-bottom: 10px;
+}
+
+.card-item p {
+  font-size: 1rem;
+  color: #f1f1f1;
+  margin: 8px 0;
+}
+
+.card-item p strong {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+  color: #a29bfe; /* Punchline accent */
+}
+
+/* ---------------------------------
+   Error Tag
+--------------------------------- */
+.tag-error {
+  width: 100%;
+  text-align: center;
+  color: #e17055;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* ---------------------------------
+   Footer
+--------------------------------- */
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-align: center;
+  color: #cccccc;
+}
+
+footer a {
+  color: #a29bfe;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+/* ---------------------------------
+   Responsive Design
+--------------------------------- */
+@media (max-width: 620px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+/* --------------------------------- */
+/* End of CSS */
+/* --------------------------------- */
+/* This CSS file is designed to provide a modern, dark-themed layout for a web application. 
+   It includes styles for typography, layout containers, forms, joke cards, and responsive design. 
+   The color scheme is primarily dark with soft accent colors for buttons and highlights. */
+/* The design is mobile-friendly, ensuring a good user experience across devices. */

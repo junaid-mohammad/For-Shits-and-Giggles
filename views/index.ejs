@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>For Kicks and Giggles</title>
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Page Title -->
+    <h1>💩 For Sh!ts and Giggles 🤡</h1>
+    <p>Select your options below to get a personalized joke!</p>
+
+    <!-- ------------------------------
+         Joke Request Form 
+         Preserves user selections across requests
+         ------------------------------ -->
+    <form action="/" method="POST" class="form">
+
+        <!-- Category Selection -->
+        <div>
+          <label>Select Categories:</label>
+          <% const cat = categories || "Any"; %>
+          <select name="categories" class="form-select">
+            <option value="Any" <%= cat === "Any" ? "selected" : "" %>>Any</option>
+            <option value="Misc" <%= cat === "Misc" ? "selected" : "" %>>Misc</option>
+            <option value="Programming" <%= cat === "Programming" ? "selected" : "" %>>Programming</option>
+            <option value="Dark" <%= cat === "Dark" ? "selected" : "" %>>Dark</option>
+            <option value="Pun" <%= cat === "Pun" ? "selected" : "" %>>Pun</option>
+            <option value="Spooky" <%= cat === "Spooky" ? "selected" : "" %>>Spooky</option>
+            <option value="Christmas" <%= cat === "Christmas" ? "selected" : "" %>>Christmas</option>
+          </select>
+        </div>
+      
+        <!-- Language Selection -->
+        <div>
+          <label>Language:</label>
+          <select name="language" class="form-select">
+            <option value="en" <%= language === "en" ? "selected" : "" %>>English</option>
+            <option value="fr" <%= language === "fr" ? "selected" : "" %>>French</option>
+          </select>
+        </div>
+      
+        <!-- Blacklist Flags -->
+        <div>
+          <label>Blacklist Flags:</label>
+          <select name="blacklist" class="form-select">
+            <option value="">None</option>
+            <option value="nsfw" <%= blacklist === "nsfw" ? "selected" : "" %>>NSFW</option>
+            <option value="religious" <%= blacklist === "religious" ? "selected" : "" %>>Religious</option>
+            <option value="political" <%= blacklist === "political" ? "selected" : "" %>>Political</option>
+            <option value="racist" <%= blacklist === "racist" ? "selected" : "" %>>Racist</option>
+            <option value="sexist" <%= blacklist === "sexist" ? "selected" : "" %>>Sexist</option>
+            <option value="explicit" <%= blacklist === "explicit" ? "selected" : "" %>>Explicit</option>
+          </select>
+        </div>
+      
+        <!-- Joke Type -->
+        <div>
+          <label>Joke Type:</label>
+          <select name="type" class="form-select">
+            <option value="">Any</option>
+            <option value="single" <%= type === "single" ? "selected" : "" %>>Single (One-liner)</option>
+            <option value="twopart" <%= type === "twopart" ? "selected" : "" %>>Two Part (Setup and Delivery)</option>
+          </select>
+        </div>
+      
+        <!-- Search Keywords -->
+        <div class="form-search">
+          <label>Search (Optional):</label>
+          <input type="text" name="contains" value="<%= contains ? contains : '' %>" placeholder="e.g., cat, programming" class="form-input">
+        </div>
+      
+        <!-- Submit Button -->
+        <button type="submit" class="form-submit">Get a Joke!</button>
+    </form>
+    
+    <!-- Disclaimer Notice -->
+    <p class="disclaimer">
+        ⚠️ This app uses jokes from an external public API. Some content may not be suitable for all audiences. The jokes are meant for humor only and not to offend.
+    </p>
+
+    <!-- ------------------------------
+         Display Joke (or error)
+         ------------------------------ -->
+    <section id="cards" class="cards">
+
+      <% if (joke) { %>
+        <article class="card-item">
+          <h2><%= joke.category %> Joke:</h2>
+          <% if (joke.type === "single") { %>
+            <p><%= joke.joke %></p>
+          <% } else { %>
+            <p><%= joke.setup %></p>
+            <p><strong><%= joke.delivery %></strong></p>
+          <% } %>
+        </article>
+      <% } %>
+
+      <% if (error) { %>
+        <div id="tag-error" class="tag-error">
+          <%= error %>
+        </div>
+      <% } %>
+
+    </section>
+
+  </div>
+
+  <!-- ------------------------------
+       Footer with Contact Links
+       ------------------------------ -->
+  <footer>
+    <% var X = new Date().getFullYear() %>
+    <p>© <%=X%> Junaid Arif</p>
+    <p>
+      <a href="https://junaid-mohammad.github.io/HTML-Portfolio-Website/" target="_blank">Website</a>
+      |
+      <a href="https://github.com/junaid-mohammad" target="_blank">GitHub</a>
+      |
+      <a href="https://www.linkedin.com/in/junaidarif-mohammad/" target="_blank">LinkedIn</a>
+      |
+      <a href="mailto:mohammad.junaidarif@mail.mcgill.ca">Email</a>
+    </p>
+  </footer>
+
+</body>
+</html>
