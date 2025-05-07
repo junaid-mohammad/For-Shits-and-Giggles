@@ -18,12 +18,14 @@ This repository contains the source code for **For Sh!ts and Giggles**, a dark-h
 
 **For Sh!ts and Giggles** was created to deepen my understanding of:
 
+- Building full-stack web apps with **Node.js**, **Express**, and **EJS**.
 - Making **RESTful API requests** from a server-side app.
-- Working with **dynamic query parameters** in external APIs.
-- Using **Axios** to make API calls and handle responses.
+- Structuring API **endpoints**, **path parameters**, and **dynamic query parameters**.
+- Using **Axios** for promise-based HTTP requests.
+- Applying **asynchronous programming** concepts like `async/await` and handling **promises**.
 - Dynamically rendering content using **EJS** templating.
-- Designing for **responsive dark mode UIs**.
-- Deploying apps using **Azure App Service** and **Azure DevOps** CI/CD.
+- Designing for **responsive dark mode UIs** using **CSS Grid** and **Flexbox**.
+- Deploying apps using **Azure App Service** and **Azure DevOps** CI/CD pipelines.
 
 ---
 
@@ -55,13 +57,14 @@ This repository contains the source code for **For Sh!ts and Giggles**, a dark-h
 
 ## 🧠 What I Learned
 
-- Making **parameterized API requests** based on user input.
-- Structuring **dynamic query parameters** for GET requests.
-- Handling and validating API responses.
-- Persisting form state after submission.
-- **Responsive design principles** for dark-mode interfaces.
-- Creating **CI/CD pipelines** using Azure DevOps.
-- Deploying web apps with **Azure App Service**.
+- Structuring **dynamic RESTful API requests** with **path and query parameters**.
+- Handling **server-side API requests** using **Axios** and understanding the **request/response lifecycle**.
+- Implementing **async/await** patterns for efficient asynchronous programming.
+- Validating and rendering API responses dynamically with **EJS**.
+- Maintaining **form state persistence** between user submissions.
+- Applying **responsive design principles** tailored for dark-mode UIs.
+- Creating and managing **CI/CD pipelines** using Azure DevOps.
+- Deploying full-stack applications seamlessly to **Azure App Service**.
 
 ---
 
