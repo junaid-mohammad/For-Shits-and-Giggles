@@ -1,7 +1,7 @@
 # For Sh!ts and Giggles
 
-[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/For%20Shits%20and%20Giggles)
-[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://your-live-site-link.com/) <!-- (Replace with actual URL when live) -->
+[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/For%20Sh!ts%20and%20Giggles)
+[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://for-shits-and-giggles-c0e5adh6hmhbfhhs.canadacentral-01.azurewebsites.net/)
 
 This repository contains the source code for **For Sh!ts and Giggles**, a dark-humored web app that fetches jokes using the **[JokeAPI](https://v2.jokeapi.dev/)**. Users can get random jokes or customize their search using categories, blacklist flags, type, and keywords. The project focuses on building **RESTful API integrations**, handling **dynamic query parameters**, and creating a modern, responsive UI with a dark aesthetic.
 
@@ -9,7 +9,7 @@ This repository contains the source code for **For Sh!ts and Giggles**, a dark-h
 
 ## 🖥️ Live Website
 
-👉 **[For Sh!ts and Giggles](https://your-live-site-link.com/)** _(Hosted on Microsoft Azure)_
+👉 **[For Sh!ts and Giggles](https://for-shits-and-giggles-c0e5adh6hmhbfhhs.canadacentral-01.azurewebsites.net/)** _(Hosted on Microsoft Azure)_
 👉 **[Azure DevOps Project](https://dev.azure.com/Junaid-Arif/For%20Shits%20and%20Giggles)**
 
 ---
@@ -86,8 +86,8 @@ The app is deployed to **Microsoft Azure App Service** and integrated with **Azu
 4. **Added Azure DevOps as Git Remote**
 
    ```bash
-   git remote add origin https://Junaid-Arif@dev.azure.com/Junaid-Arif/For%20Shits%20and%20Giggles/_git/For%20Shits%20and%20Giggles
-   git push -u origin --all
+   git remote add azure https://Junaid-Arif@dev.azure.com/Junaid-Arif/For%20Shits%20and%20Giggles/_git/For%20Shits%20and%20Giggles
+   git push azure main
    ```
 
 5. **Push to Both Remotes**
